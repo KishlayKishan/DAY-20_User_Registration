@@ -57,7 +57,14 @@ public class UserRegistrationTest {
 	@Test
 	public void givenPassword_WhenAtleastOne_Caps_ShouldReturnTrue() {
 		UserRegistration userRegistration = new UserRegistration();
-		boolean password = userRegistration.validatePassword("Kishore@123");
+		boolean password = userRegistration.validatePassword("Kishan@123");
+		Assertions.assertTrue(password);
+	}
+
+	@Test
+	public void givenPassword_WhenAtleastOne_Numerics_ShouldReturnTrue() {
+		UserRegistration userRegistration = new UserRegistration();
+		boolean password = userRegistration.validatePassword("Kishan@1");
 		Assertions.assertTrue(password);
 	}
 }
