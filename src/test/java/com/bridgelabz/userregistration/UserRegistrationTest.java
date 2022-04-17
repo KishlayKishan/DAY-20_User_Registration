@@ -15,4 +15,10 @@ public class UserRegistrationTest {
 		UserRegistration userRegistration = new UserRegistration();
 		userRegistration.validateLastName("Kishan");
 	}
+
+	@Test
+	public void givenEmail_WhenProper_ShouldReturnTrue() {
+		UserRegistration userRegistration = new UserRegistration();
+		userRegistration.validateEmail("kishan.kishlay20@gmail.com");
+	}
 }
