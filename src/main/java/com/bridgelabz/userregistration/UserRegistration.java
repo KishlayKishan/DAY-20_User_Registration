@@ -38,6 +38,7 @@ public class UserRegistration {
 
 	ArrayList<String> emailArrayList = new ArrayList<String>();
 
+//
 	public void addEmail() {
 
 		emailArrayList.add("abc@yahoo.com");
