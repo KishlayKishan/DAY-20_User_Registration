@@ -3,3 +3,4 @@
 .settings/
 pom.xml
 target/
+src/test/java/org/
