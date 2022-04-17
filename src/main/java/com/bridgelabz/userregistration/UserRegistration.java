@@ -1,5 +1,6 @@
 package com.bridgelabz.userregistration;
 
+import java.util.ArrayList;
 import java.util.regex.Pattern;
 
 public class UserRegistration {
@@ -33,5 +34,20 @@ public class UserRegistration {
 	public boolean validatePassword(String password) {
 		Pattern pattern = Pattern.compile(PASSWORD_PATTERN);
 		return Pattern.matches(PASSWORD_PATTERN, password);
+	}
+
+	ArrayList<String> emailArrayList = new ArrayList<String>();
+
+	public void addEmail() {
+
+		emailArrayList.add("abc@yahoo.com");
+		emailArrayList.add("abc-100@yahoo.com");
+		emailArrayList.add("abc111@abc.com");
+		emailArrayList.add("abc-100@abc.net");
+		emailArrayList.add("abc.100@abc.com.au");
+		emailArrayList.add("abc@1.com");
+		emailArrayList.add("abc@gmail.com.com");
+		emailArrayList.add("abc@abc+100@gmail.com");
+
 	}
 }
