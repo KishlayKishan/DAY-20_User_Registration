@@ -67,4 +67,12 @@ public class UserRegistrationTest {
 		boolean password = userRegistration.validatePassword("Kishan@1");
 		Assertions.assertTrue(password);
 	}
+
+	@Test
+	public void givenPassword_HasExactlyOneSpecialCharacter_ShouldReturnTrue() {
+		UserRegistration userRegistration = new UserRegistration();
+		boolean password = userRegistration.validatePassword("Kishan@1");
+		Assertions.assertTrue(password);
+	}
+
 }

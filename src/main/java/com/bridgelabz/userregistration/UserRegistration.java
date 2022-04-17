@@ -29,6 +29,7 @@ public class UserRegistration {
 		return Pattern.matches(PHONE_PATTERN, phNumber);
 	}
 
+	//
 	public boolean validatePassword(String password) {
 		Pattern pattern = Pattern.compile(PASSWORD_PATTERN);
 		return Pattern.matches(PASSWORD_PATTERN, password);
